@@ -1,15 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-.input{
-    width: 100%;
-    height: auto;
+
+.inputStyle{
     font-size: 45px;
+    height: 90px;
+    margin-top: 8px;
+    width: 800px;
     border: 5px solid #2E4D46;
     border-radius: 12px;
-    padding: 25px;
 }
 
+.calculator{
+    margin-left: 83px;
+}
 
 .calc-btn {
     border: 5px solid #2E4D46;
