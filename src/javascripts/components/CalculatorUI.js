@@ -28,7 +28,10 @@ const CalculatorUI = () => {
                         <button type="button" className="calc-btn" onClick={() => insert(' )')}>)</button>
                     </div>
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert('% ')}>%</button>
+                        <button type="button" className="calc-btn" onClick={() => insert('%')}>%</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" className="calc-btn" onClick={() => insert('**')}>^</button>
                     </div>
                     <div class="col">
                         <button type="button" className="calc-btn" onClick={() => setCurrent(current.substr(0, current.length - 1))}>
@@ -47,8 +50,9 @@ const CalculatorUI = () => {
                         <button type="button" className="calc-btn" onClick={() => insert(9)}>9</button>
                     </div>
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert(' / ')}>/</button>
+                        <button type="button" className="calc-btn" onClick={() => insert('/')}>/</button>
                     </div>
+                    <div class="col"></div>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -61,8 +65,9 @@ const CalculatorUI = () => {
                         <button type="button" className="calc-btn" onClick={() => insert(6)}>6</button>
                     </div>
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert(' * ')}>X</button>
+                        <button type="button" className="calc-btn" onClick={() => insert('*')}>X</button>
                     </div>
+                    <div class="col"></div>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -75,12 +80,13 @@ const CalculatorUI = () => {
                         <button type="button" className="calc-btn" onClick={() => insert(3)}>3</button>
                     </div>
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert(' - ')}>-</button>
+                        <button type="button" className="calc-btn" onClick={() => insert('-')}>-</button>
                     </div>
+                    <div class="col"></div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert(0)}>7</button>
+                        <button type="button" className="calc-btn" onClick={() => insert(0)}>0</button>
                     </div>
                     <div class="col">
                         <button type="button" className="calc-btn" onClick={() => insert(".")}>.</button>
@@ -89,8 +95,9 @@ const CalculatorUI = () => {
                         <button type="button" className="calc-btn" onClick={() => setCurrent(eval(current))}>=</button>
                     </div>
                     <div class="col">
-                        <button type="button" className="calc-btn" onClick={() => insert(' + ')}>+</button>
+                        <button type="button" className="calc-btn" onClick={() => insert('+')}>+</button>
                     </div>
+                    <div class="col"></div>
                 </div>
             </div>
         </div>);
